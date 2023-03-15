@@ -1,20 +1,22 @@
 {
-     "name": "web_app",
-     "version": "1.0.0",
-     "description": "",
-     "main": "index.js",
-     "scripts": {
-          "test": "echo \"Error: no test specified\" && exit 1"
-     },
-     "keywords": [],
-     "author": "",
-     "license": "ISC",
-     "devDependencies": {
-          "browser-sync": "^2.23.5",
-          "gulp": "^3.9.1",
-          "gulp-autoprefixer": "^4.1.0",
-          "gulp-connect": "^5.2.0",
-          "gulp-sass": "^3.1.0",
-          "run-sequence": "^2.2.1"
-     }
+  "name": "krl",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  }
 }
