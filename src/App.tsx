@@ -1,9 +1,10 @@
+import HeaderNav from './components/header/HeaderNav';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>KRL</h1>
+      <HeaderNav />
     </div>
   );
 }
