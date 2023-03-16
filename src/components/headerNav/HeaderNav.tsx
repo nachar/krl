@@ -23,7 +23,7 @@ function HeaderNav() {
               <li key={item.key}>
                 <a
                   href={item.url}
-                  className="header-nav__link text-decoration-none p-2 px-lg-5 pt-lg-3 d-block"
+                  className="header-nav__link text-decoration-none d-block p-2 pt-3 px-md-4 px-lg-5"
                 >
                   {item.name}
                 </a>

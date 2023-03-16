@@ -1,0 +1,7 @@
+.header-component {
+  height: calc(100vh - 130px);
+
+  &__img {
+    object-fit: cover;
+  }
+}
