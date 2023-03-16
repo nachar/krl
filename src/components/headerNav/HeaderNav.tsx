@@ -9,7 +9,7 @@ function HeaderNav() {
 
   return (
     <header>
-      <nav>
+      <nav className="">
         <a href="/">
           <img src={logo} alt="KRL Logo" />
         </a>
