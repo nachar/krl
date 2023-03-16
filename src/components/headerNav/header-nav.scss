@@ -1,0 +1,10 @@
+@import "../../style/variables";
+
+.header-nav {
+  &__img {
+    width: 160px;
+  }
+  &__link {
+    color: $color-black;
+  }
+}
