@@ -1,0 +1,21 @@
+@import "../../style/variables";
+
+.social {
+  bottom: 20px;
+
+  &__list {
+    background-color: $transparent-white;
+
+    &__item {
+      margin-right: 1.5rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &__icon {
+        width: 46px;
+      }
+    }
+  }
+}

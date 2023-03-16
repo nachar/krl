@@ -1,8 +1,9 @@
 import logo from '../../assets/img/header-nav/logo.png';
 import './header-nav.scss';
+import { Header } from '../../interfaces/interfaces';
 
 function HeaderNav() {
-  const header = [
+  const header: Header = [
     { name: 'Nosotros', url: '', key: 'nosotros' },
     { name: 'Banda', url: '', key: 'banda' },
     { name: 'Contacto', url: '', key: 'contacto' },
