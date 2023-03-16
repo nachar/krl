@@ -1,6 +1,6 @@
 import logo from '../../assets/img/header-nav/logo.png';
 import './header-nav.scss';
-import { Header } from '../../interfaces/interfaces';
+import { Header, HeaderItem } from '../../interfaces/interfaces';
 
 function HeaderNav() {
   const header: Header = [
@@ -20,7 +20,7 @@ function HeaderNav() {
           </div>
 
           <ul className="d-flex justify-content-center list-unstyled m-0">
-            {header.map((item) => (
+            {header.map((item: HeaderItem) => (
               <li key={item.key}>
                 <a
                   href={item.url}
