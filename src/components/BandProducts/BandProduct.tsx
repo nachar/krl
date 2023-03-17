@@ -6,7 +6,7 @@ type Props = {
 };
 function BandProduct({ product }: Props) {
   return (
-    <li className="col-lg-4 mb-4">
+    <li className="col-md-6 col-lg-4">
       <div className="product h-100 rounded-2 overflow-hidden">
         <div className="product__img">
           <img

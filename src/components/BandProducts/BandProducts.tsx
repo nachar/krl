@@ -48,7 +48,7 @@ function BandProducts() {
     <div>
       <TitleComponent title="Tipos de espectáculo" />
       <div className="container py-5">
-        <ul className="row list-unstyled d-flex justify-content-center">
+        <ul className="row list-unstyled d-flex justify-content-center gy-4">
           {products.map((product: Product) => (
             <BandProduct key={product.key} product={product} />
           ))}
