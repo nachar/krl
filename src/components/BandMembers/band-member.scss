@@ -1,0 +1,8 @@
+.band-member {
+  &__img {
+    height: 500px;
+    img {
+      object-fit: cover;
+    }
+  }
+}
