@@ -1,0 +1,11 @@
+@import "../../style/variables";
+
+.title-component {
+  &__img {
+    object-fit: cover;
+  }
+  &__content {
+    background-color: $transparent-black;
+    color: $color-white;
+  }
+}

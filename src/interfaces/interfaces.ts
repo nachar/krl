@@ -14,3 +14,12 @@ export type HeaderItem = {
 };
 
 export type Header = HeaderItem[];
+
+export type Product = {
+  title: string;
+  description: string;
+  image: string;
+  key: string;
+};
+
+export type Products = Product[];

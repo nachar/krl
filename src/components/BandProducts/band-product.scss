@@ -1,0 +1,11 @@
+.product {
+  box-shadow: 0 0 10px 1px #d5d4d4;
+
+  &__img {
+    height: 260px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}

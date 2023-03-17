@@ -24,7 +24,7 @@ function HeaderNav() {
               <li key={item.key}>
                 <a
                   href={item.url}
-                  className="header-nav__link text-decoration-none d-block p-2 pt-3 px-md-4 px-lg-5"
+                  className="header-nav__link text-decoration-none d-block p-2 pt-3 px-md-4 px-lg-5 fw-bold"
                 >
                   {item.name}
                 </a>
