@@ -45,7 +45,7 @@ function BandProducts() {
     },
   ];
   return (
-    <div>
+    <section>
       <TitleComponent title="Tipos de espectáculo" />
       <div className="container py-5">
         <ul className="row list-unstyled d-flex justify-content-center gy-4">
@@ -54,7 +54,7 @@ function BandProducts() {
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

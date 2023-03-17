@@ -2,6 +2,7 @@ import HeaderNav from '../HeaderNav/HeaderNav';
 import HeroComponent from '../HeroComponent/HeroComponent';
 import BandProducts from '../BandProducts/BandProducts';
 import IntroMessage from '../IntroMessage/IntroMessage';
+import BandMembers from '../BandMembers/BandMembers';
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <HeroComponent />
       <IntroMessage />
       <BandProducts />
+      <BandMembers />
     </div>
   );
 }
