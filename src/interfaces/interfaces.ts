@@ -23,3 +23,13 @@ export type Product = {
 };
 
 export type Products = Product[];
+
+export type BandMember = {
+  key: string;
+  name: string;
+  role: string;
+  description: string;
+  image: string;
+};
+
+export type BandMembers = BandMember[];
