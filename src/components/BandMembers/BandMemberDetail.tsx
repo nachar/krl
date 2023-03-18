@@ -16,13 +16,13 @@ function BandMemberDetail({ bandMember }: Props) {
             alt={bandMember.name}
             className="w-100 h-100"
           />
-          <img
-            src={wave}
-            alt="wave"
-            className="band-member__img__wave position-absolute"
-          />
-          <h4 className="band-member__img__title position-absolute m-0 px-4">
-            {bandMember.name}
+          <h4 className="band-member-img-title position-absolute m-0 d-flex justify-content-center align-items-center">
+            <img
+              src={wave}
+              alt="wave"
+              className="band-member-img-title__wave position-absolute"
+            />
+            <span className="position-relative">{bandMember.name}</span>
           </h4>
         </div>
       </div>
