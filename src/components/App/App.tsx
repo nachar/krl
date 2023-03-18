@@ -3,6 +3,7 @@ import HeroComponent from '../HeroComponent/HeroComponent';
 import BandProducts from '../BandProducts/BandProducts';
 import IntroMessage from '../IntroMessage/IntroMessage';
 import BandMembers from '../BandMembers/BandMembers';
+import ContactForm from '../ContactForm/ContactForm';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <IntroMessage />
       <BandProducts />
       <BandMembers />
+      <ContactForm />
     </div>
   );
 }
