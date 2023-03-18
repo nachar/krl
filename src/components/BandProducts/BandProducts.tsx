@@ -6,7 +6,7 @@ import ProductsData from '../../data/ProductsData';
 function BandProducts() {
   return (
     <section>
-      <TitleComponent title="Tipos de espectáculo" />
+      <TitleComponent title="Nosotros" />
       <div className="container py-5">
         <ul className="row list-unstyled d-flex justify-content-center gy-4">
           {ProductsData.map((product: Product) => (

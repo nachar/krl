@@ -1,11 +1,10 @@
 @import "../../style/variables";
 
 .title-component {
-  &__img {
-    object-fit: cover;
-  }
-  &__content {
-    background-color: $color-transparent-black;
-    color: $color-white;
+  background-color: $color-black;
+  color: $color-white;
+
+  h3 {
+    font-size: 2.7rem;
   }
 }
