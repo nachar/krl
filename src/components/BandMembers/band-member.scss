@@ -1,8 +1,43 @@
+@import "../../style/variables";
+
 .band-member {
+  margin-bottom: 4rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &__img {
-    height: 500px;
+    height: 300px;
+
+    @media (min-width: 768px) {
+      height: 400px;
+    }
+
+    @media (min-width: 992px) {
+      height: 600px;
+    }
+
     img {
       object-fit: cover;
     }
+
+    &__wave {
+      bottom: 1%;
+      right: 1%;
+      width: 20rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+      bottom: 6%;
+      right: 6%;
+      color: $color-white;
+
+      @media (min-width: 992px) {
+        font-size: 4.3rem;
+      }
+    }
   }
 }
+

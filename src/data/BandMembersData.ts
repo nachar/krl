@@ -7,8 +7,8 @@ import { BandMembers } from '../interfaces/interfaces';
 
 const BandMembersData: BandMembers = [
   {
-    key: 'iLan',
-    name: 'ILan',
+    key: 'ilan',
+    name: 'Ilan',
     role: 'Animación',
     description:
       'Fundador de KRL Producciones SpA. Actor y Músico. Director de la primera orquesta de Rock & Clown del mundo , profesor de School Of Rock. La Ciscu Margaret Orquesta Clown, School of Rock , KRL. Se ha presentado en escenarios como; Movistar Arena, Quinta Vergara,Lollapalooza España, Francia, Perú, Colombia , Brasil y todo Chile.',
