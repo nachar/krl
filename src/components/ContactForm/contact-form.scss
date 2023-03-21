@@ -1,0 +1,20 @@
+@import "../../style/variables";
+
+.form-text-area {
+  resize: none;
+}
+
+.form-submit-button {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: .8rem 3.4rem;
+  font-size: 1.2rem;
+}
+
+.contact-form-image {
+  height: 600px;
+
+  img {
+    object-fit: cover;
+  }
+}
