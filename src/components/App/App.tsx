@@ -4,6 +4,7 @@ import BandProducts from '../BandProducts/BandProducts';
 import IntroMessage from '../IntroMessage/IntroMessage';
 import BandMembers from '../BandMembers/BandMembers';
 import ContactForm from '../ContactForm/ContactForm';
+import FooterComponent from '../FooterComponent/FooterComponent';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <BandProducts />
       <BandMembers />
       <ContactForm />
+      <FooterComponent />
     </div>
   );
 }
