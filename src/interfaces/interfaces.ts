@@ -33,3 +33,10 @@ export type BandMember = {
 };
 
 export type BandMembers = BandMember[];
+
+export type Email = {
+  name: string;
+  mail: string;
+  topic: string;
+  message: string;
+};

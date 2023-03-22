@@ -1,14 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TitleComponent from '../TitleComponent/TitleComponent';
 import FormInput from './FormInput';
 import FormTextArea from './FormTextArea';
 import FormSubmitButton from './FormSubmitButton';
-import contactFormImage from '../../assets/img/contact-form/contact-form.jpg';
+import ContactFormImage from './ContactFormImage';
+import FormResults from './FormResults';
+import sendApiForm from './SendForm';
+import { Email } from '../../interfaces/interfaces';
 
 function ContactForm() {
-  const sendForm = (e: React.SyntheticEvent) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    mail: '',
+    topic: '',
+    message: '',
+  });
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+
+  const updateFields = (updatedData: Partial<Email>) => {
+    setFormData({ ...formData, ...updatedData });
+  };
+  const sendForm = async (e: React.SyntheticEvent) => {
     e.preventDefault();
-    console.log('send form: ', e);
+    try {
+      await sendApiForm(formData);
+      setSuccess(true);
+      // eslint-disable-next-line @typescript-eslint/no-shadow
+    } catch (error) {
+      setError(true);
+    }
   };
 
   return (
@@ -16,36 +37,49 @@ function ContactForm() {
       <TitleComponent title="Contacto" />
       <div className="container py-5">
         <div className="row">
-          <div className="col-lg-6 d-none d-lg-block">
-            <div className="contact-form-image">
-              <img
-                src={contactFormImage}
-                alt="Formulario de contacto"
-                className="w-100 h-100"
-              />
+          <ContactFormImage />
+          {success || error ? (
+            <FormResults success={success} error={error} />
+          ) : (
+            <div className="col-lg-6 d-flex align-items-center">
+              <div className="ps-lg-5">
+                <form className="row gy-3" onSubmit={sendForm}>
+                  <FormInput
+                    label="Nombre"
+                    type="text"
+                    name="name"
+                    key="name"
+                    value={formData.name}
+                    updateFields={updateFields}
+                  />
+                  <FormInput
+                    label="Correo electrónico"
+                    type="email"
+                    name="mail"
+                    key="mail"
+                    value={formData.mail}
+                    updateFields={updateFields}
+                  />
+                  <FormInput
+                    label="Asunto"
+                    type="text"
+                    name="topic"
+                    key="topic"
+                    value={formData.topic}
+                    updateFields={updateFields}
+                  />
+                  <FormTextArea
+                    label="Mensaje"
+                    name="message"
+                    key="message"
+                    value={formData.message}
+                    updateFields={updateFields}
+                  />
+                  <FormSubmitButton />
+                </form>
+              </div>
             </div>
-          </div>
-          <div className="col-lg-6 d-flex align-items-center">
-            <div className="ps-lg-5">
-              <form className="row gy-3" onSubmit={sendForm}>
-                <FormInput label="Nombre" type="text" name="name" key="name" />
-                <FormInput
-                  label="Correo electrónico"
-                  type="email"
-                  name="email"
-                  key="email"
-                />
-                <FormInput
-                  label="Asunto"
-                  type="text"
-                  name="topic"
-                  key="topic"
-                />
-                <FormTextArea label="Mensaje" name="message" key="message" />
-                <FormSubmitButton />
-              </form>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </div>
